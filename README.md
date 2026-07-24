@@ -1,0 +1,1 @@
+# Checkpoint-Script-SQL-de-Ingenier-a-de-Datos
