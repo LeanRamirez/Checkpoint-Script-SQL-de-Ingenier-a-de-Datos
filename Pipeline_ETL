@@ -1,0 +1,3 @@
+Los valores nulos presentes en los campos email y ciudad se mantienen sin modificaciones, ya que su ausencia no afecta la integridad ni los cálculos previstos para el análisis. Además, no se reemplazan por valores predeterminados debido a que no existe información suficiente para inferirlos de manera confiable; asignar un valor arbitrario introduciría datos no respaldados por la fuente original.
+
+En el caso del campo categoria, la información disponible en la tabla permite identificar que el valor nulo corresponde a la categoría “Computación”. Por este motivo, se realiza la corrección utilizando evidencia existente en el conjunto de datos, evitando introducir valores estimados o supuestos.
