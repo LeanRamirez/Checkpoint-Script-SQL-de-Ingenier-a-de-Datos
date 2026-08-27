@@ -1,3 +1,6 @@
-Los valores nulos presentes en los campos email y ciudad se mantienen sin modificaciones, ya que su ausencia no afecta la integridad ni los cálculos previstos para el análisis. Además, no se reemplazan por valores predeterminados debido a que no existe información suficiente para inferirlos de manera confiable; asignar un valor arbitrario introduciría datos no respaldados por la fuente original.
+En la tabla de clientes encontré valores nulos en las columnas `email` y `ciudad`. Decidí reemplazarlos por “Sin informar” para conservar los registros, ya que los clientes tenían un identificador válido y no era necesario eliminarlos. No coloqué un correo ni una ciudad específica porque no había información suficiente para saber cuáles eran los datos reales.
 
-En el caso del campo categoria, la información disponible en la tabla permite identificar que el valor nulo corresponde a la categoría “Computación”. Por este motivo, se realiza la corrección utilizando evidencia existente en el conjunto de datos, evitando introducir valores estimados o supuestos.
+En la tabla de productos, el producto “Laptop Gaming Pro” tenía un valor nulo en la columna `categoria`. Lo reemplacé por “Computación” porque su nombre y su subcategoría “Laptops” permitían identificar la categoría correspondiente.
+
+También encontré un precio nulo en el producto “SSD Externo 1TB”. Para corregirlo, busqué el mismo producto en la tabla de ventas y comprobé que su precio unitario era 130. Por ese motivo, utilicé ese valor en la tabla de productos, en lugar de eliminar el registro o asignarle un precio sin respaldo.
+
